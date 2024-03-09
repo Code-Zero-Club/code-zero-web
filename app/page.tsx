@@ -37,8 +37,8 @@ export default function Home() {
         <h2 className="text-sm text-zinc-500 ">
           <Link
             target="_blank"
-            href="mailto:contact@codezero.lol"
-            className="block text-center w-36 h-12 bg-slate-300 text-slate-500 leading-[3rem] rounded-md hover:font-bold"
+            href="https://naver.me/GXqWkozs"
+            className="block text-center text-lg text-slate-50 rounded-md hover:font-bold"
           >
             신청하기
           </Link>
