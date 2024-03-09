@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     default: "Code Zero",
     template: "%s | Code Zero",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "광양고등학교의 유일한 코딩 동아리 Code Zero 입니다.",
   openGraph: {
     title: "Code Zero",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+      "광양고등학교의 유일한 코딩 동아리 Code Zero 입니다.",
     url: "https://codezero.lol",
     siteName: "codezero.lol",
     images: [
