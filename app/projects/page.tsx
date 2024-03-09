@@ -46,7 +46,7 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            지금까지 Code : Zero 동아리에서 진행한 프로젝트 기록입니다.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
