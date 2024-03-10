@@ -21,8 +21,8 @@ export default async function ProjectsPage() {
   }, {} as Record<string, number>);
 
   const featured = allProjects.find((project) => project.slug === "handPresentation")!;
-  const top2 = allProjects.find((project) => project.slug === "handPresentation")!; // mdx 파일 관련 문제 있음
-  const top3 = allProjects.find((project) => project.slug === "handPresentation")!;
+  const top2 = allProjects.find((project) => project.slug === "ballSoccer")!; // mdx 파일 관련 문제 있음
+  const top3 = allProjects.find((project) => project.slug === "learnAboutAI")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
