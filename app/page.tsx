@@ -35,7 +35,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 px-4">
-          <strong>동아리 면접 안내</strong><br/><br/>2학년 면접은 3월 13일 점심 시간 1층 기술실에서 진행되며,<br/>1학년 면접은 3월 20일 점심 시간 1층 기술실에서 진행됩니다.<br/><br/>해당 사이트를 통해 <strong>신청을 하지 않은 학생은 면접이 어려울 수 있습니다.</strong>
+          <strong>동아리 면접 안내</strong><br/><br/>2학년 면접은 3월 13일 점심 시간 1층 기술실에서 진행되며,<br/>1학년 면접은 3월 18일 점심 시간 1층 기술실에서 진행됩니다.<br/><br/>해당 사이트를 통해 <strong>신청을 하지 않은 학생은 면접이 어려울 수 있습니다.</strong>
           <Link
             target="_blank"
             href="https://naver.me/GXqWkozs"
