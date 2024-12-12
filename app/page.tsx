@@ -35,17 +35,38 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 px-4">
-          <strong>동아리 면접 안내</strong><br/><br/>동아리 면접이 종료되었습니다.<br/>관심 가져주셔서 감사합니다!
-          <Link
-            target="_blank"
-            href="https://naver.me/GXqWkozs"
-            className="block text-center text-lg text-slate-50 rounded-md mt-8 hover:font-bold"
-          >
-            신청하기
-          </Link>
+          <strong>2024 ShowReel</strong>
+          <br />
+          <br />
+          Code : Zero에서 1년간 진행한 프로젝트를 아래 링크에서 확인할 수
+          있습니다.
+          <br />
+          1년간의 성장과정을 확인해보세요!
+          <div className="flex flex-row gap-6 items-center justify-center">
+            <Link
+              target="_blank"
+              href="https://czwa.codezero.lol"
+              className="block text-center text-lg text-slate-50 rounded-md mt-8 hover:font-bold"
+            >
+              CZWA
+            </Link>
+            <Link
+              target="_blank"
+              href="https://dormitalk.codezero.lol"
+              className="block text-center text-lg text-slate-50 rounded-md mt-8 hover:font-bold"
+            >
+              도미톡!
+            </Link>
+            <Link
+              target="_blank"
+              href="https://weather-info.codezero.lol"
+              className="block text-center text-lg text-slate-50 rounded-md mt-8 hover:font-bold"
+            >
+              오늘의 날씨
+            </Link>
+          </div>
         </h2>
       </div>
     </div>
   );
-
 }
