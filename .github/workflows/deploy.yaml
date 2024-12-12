@@ -1,0 +1,47 @@
+name: Deploy to Vercel (push personal repository)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pandoc/latex
+    permissions:
+      contents: write
+      actions: read
+
+    steps:
+      - name: Install git
+        run: apk add --no-cache git
+
+      - name: Checkout source repository
+        uses: actions/checkout@v2
+        with:
+          path: source-repo
+
+      - name: Checkout destination repository
+        uses: actions/checkout@v2
+        with:
+          repository: DOS0313/codezero-deploy
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+          path: destination-repo
+          
+      - name: Install mustache (to update the date)
+        run: apk add ruby && gem install mustache
+
+      - name: Update repository folder
+        run: |
+          mkdir -p destination-repo/${{ github.event.repository.name }}
+          rm -rf destination-repo/${{ github.event.repository.name }}/*
+          cp -R source-repo/* destination-repo/${{ github.event.repository.name }}/ 2>/dev/null || true
+
+      - name: Commit and push changes
+        run: |
+          cd destination-repo
+          git config --global user.email "${{ secrets.OFFICIAL_ACCOUNT_EMAIL }}"
+          git config --global user.name "GitHub Action"
+          git add .
+          git commit -m "${{ github.event.repository.name }}: ${{ github.event.commits[0].message }}"
+          git push
